@@ -6,7 +6,7 @@ function clickCalc() {
   const ValueSisho = 0.07;
   const ValueKaim = 0.1;
   const ValueTenshiWepon = 1.23;
-  const ValueOmega = 0.1;
+  const ValueOmega = 0.15;
   const ValueKuon = 0.05;
   var result = 0;
   var base = 0;
