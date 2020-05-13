@@ -1,5 +1,5 @@
 # grabluCalclation
-https://shin1127.github.io/grabluCalclation/
+https://shin1127.github.io/grandblueCalculator
 
 # Introduction
 ソーシャルゲーム『グランブルーファンタジー』のダメージ計算機。
