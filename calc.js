@@ -61,6 +61,8 @@ function clickBtn7() {
     base = 202;
   } else if (characterType == "lulia") {
     base = 212;
+  } else {
+    base = 167;
   }
 
   result += base;
@@ -96,8 +98,10 @@ function clickBtn7() {
     finalsum += 0.05;
   } else if (stoneType == "7per") {
     finalsum += 0.07;
-  } else {
+  } else if (stoneType == "10per") {
     finalsum += 0.1;
+  } else {
+    // pass
   }
 
   result *= 1 + finalsum;
