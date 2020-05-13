@@ -34,6 +34,12 @@ function clickCalc() {
   var radioNodeList2 = element.arkStone;
   var stoneType = radioNodeList2.value;
 
+  // 奥義上限LBの読み込み
+
+  var element = document.getElementById("lbStar");
+  var radioNodeList3 = element.lbStar;
+  var star = radioNodeList3.value;
+
   if (characterType == "normal") {
     base = 167;
   } else if (characterType == "juttenshu") {
@@ -60,6 +66,14 @@ function clickCalc() {
   }
   if (flagKuon) {
     result += base * ValueKuon;
+  }
+
+  if (star == "1") {
+    result += base * 0.05;
+  } else if (star == "2") {
+    result += base * 0.08;
+  } else if (star == "3") {
+    result += base * 0.1;
   }
 
   result += (base * inputOther) / 100;
