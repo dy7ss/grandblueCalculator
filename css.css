@@ -11,10 +11,12 @@ article.main {
 }
 div.result {
   padding-top: 15px;
+  text-align: center;
 }
 
 div.checkbox {
   text-align: left;
+  line-height: 2;
 }
 
 input.result {
