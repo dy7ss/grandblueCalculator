@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="calc.js"></script>
+    <link rel="stylesheet" href="css.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>グラブル奥義上限 計算機</h1>
+    これがあればお前ら、古戦場頑張れるよな？<br /><br />
+
+    <article class="main">
+      キャラクター選択<br />
+      <form id="character">
+        <input type="radio" name="character" value="normal" />主人公・通常キャラ
+        <input type="radio" name="character" value="juttenshu" />十天衆
+        <input
+          type="radio"
+          name="character"
+          value="lulia"
+        />ルリア・ロボミ・水ヴァンピィ
+        <br />
+      </form>
+      <br />
+      アーカルム石
+      <form id="arkStone">
+        <input type="radio" name="arkStone" value="none" />ない
+        <input type="radio" name="carkStone" value="5per" />5%
+        <input type="radio" name="arkStone" value="7per" />7%
+        <input type="radio" name="arkStone" value="10per" />10%
+      </form>
+
+      <br />
+      <div class="checkbox">
+        <input
+          type="checkbox"
+          id="input_tenbin"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />支配の天秤<br />
+
+        <input
+          type="checkbox"
+          id="input_sisho"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />四象武器(SLv.15)<br />
+        <input
+          type="checkbox"
+          id="inputKaim"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />カイム<br />
+        <input
+          type="checkbox"
+          id="inputTenshiWepon"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />天司武器(SLv.15)<br />
+
+        <input
+          type="checkbox"
+          id="inputOmega"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />オメガウェポン or 終末の神器<br />
+
+        <input
+          type="checkbox"
+          id="inputKuon"
+          name="name"
+          required
+          minlength="4"
+          maxlength="8"
+          size="10"
+        />久遠の指輪(十天統べ称号)<br />
+      </div>
+
+      ダメージ上限値<br />
+      <input type="button" value="計算する" onclick="clickBtn7()" />
+      <input type="button" value="クリア" onclick="clickBtn8()" />
+      <br />
+      <td class="sample_td">
+        <input
+          value=""
+          name="result"
+          type="text"
+          id="result"
+          class="sample_input"
+          readonly
+        />
+      </td>
+    </article>
+  </body>
+</html>
