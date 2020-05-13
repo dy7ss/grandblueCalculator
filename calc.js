@@ -39,6 +39,11 @@ function clickBtn7() {
   var flagOmega = document.getElementById("inputOmega").checked;
   var flagKuon = document.getElementById("inputKuon").checked;
 
+  // その他欄の入力を受け取る
+
+  var inputOther = document.getElementById("other").value;
+  inputOther = parseInt(inputOther);
+
   // キャラクター種類の読み込み
   var element = document.getElementById("character");
   var radioNodeList = element.character;
@@ -75,6 +80,8 @@ function clickBtn7() {
   if (flagKuon) {
     result += base * ValueKuon;
   }
+
+  result += (base * inputOther) / 100;
 
   //最終ダメージ加算系（天司枠）
 
