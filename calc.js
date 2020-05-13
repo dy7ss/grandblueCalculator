@@ -1,28 +1,7 @@
-// const valueTenbin = 0.1;
-// const ValueSisho = 0.07;
-// const ValueKaim = 0.1;
-// const ValueTenshiWepon = 1.23;
-
-// HTMLでの入力状態
-
-// var flagTenbin = document.getElementById("input_tenbin").checked;
-// var flagSishoWepon = document.getElementById("input_sisho").checked;
-// var flagTenshiWepon = document.getElementById("inputTenshiWepon").checked;
-
 var result = 0;
 var base = 167;
 
-// if (flagTenbin) {
-//   result += base * valueTenbin;
-// }
-// if (flagSishoWepon) {
-//   result += base * ValueSisho;
-// }
-// if (flagTenshiWepon) {
-//   result *= ValueTenshiWepon;
-// }
-
-function clickBtn7() {
+function clickCalc() {
   const valueTenbin = 0.1;
   const ValueSisho = 0.07;
   const ValueKaim = 0.1;
@@ -30,7 +9,7 @@ function clickBtn7() {
   const ValueOmega = 0.1;
   const ValueKuon = 0.05;
   var result = 0;
-  var base = 167;
+  var base = 0;
 
   var flagTenbin = document.getElementById("input_tenbin").checked;
   var flagSishoWepon = document.getElementById("input_sisho").checked;
@@ -108,4 +87,8 @@ function clickBtn7() {
 
   // 値を取得
   document.getElementById("result").value = result;
+}
+
+function clickClear() {
+  document.getElementById("result").value = "";
 }

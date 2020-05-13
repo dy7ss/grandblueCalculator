@@ -8,32 +8,42 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>グラブル奥義上限 計算機</h1>
+    <h1>グラブル奥義上限 計算機(β)</h1>
     これがあればお前ら、古戦場頑張れるよな？<br /><br />
 
     <article class="main">
-      キャラクター選択<br />
-      <form id="character">
-        <input type="radio" name="character" value="normal" />主人公・通常キャラ
-        <input type="radio" name="character" value="juttenshu" />十天衆
-        <input
-          type="radio"
-          name="character"
-          value="lulia"
-        />ルリア/ロボミ/水ヴァンピィ
-        <br />
-      </form>
+      キャラクター選択
       <br />
-      アーカルム石
-      <form id="arkStone">
-        <input type="radio" name="arkStone" value="none" />ない
-        <input type="radio" name="carkStone" value="5per" />5%
-        <input type="radio" name="arkStone" value="7per" />7%
-        <input type="radio" name="arkStone" value="10per" />10%
-      </form>
+      <div class="checkbox">
+        <form id="character">
+          <input
+            type="radio"
+            name="character"
+            value="normal"
+          />主人公・通常キャラ<br />
+          <input type="radio" name="character" value="juttenshu" />十天衆<br />
+          <input
+            type="radio"
+            name="character"
+            value="lulia"
+          />ルリア/ロボミ/水ヴァンピィ
+          <br />
+        </form>
+      </div>
+      <br />
+      アーカルム石<br />
+      <div class="checkbox">
+        <form id="arkStone">
+          <input type="radio" name="arkStone" value="none" />ない<br />
+          <input type="radio" name="carkStone" value="5per" />5%<br />
+          <input type="radio" name="arkStone" value="7per" />7%<br />
+          <input type="radio" name="arkStone" value="10per" />10%
+        </form>
+      </div>
 
       <br />
-      装備<br />
+      装備など
+      <br />
       <div class="checkbox">
         <input
           type="checkbox"
@@ -91,27 +101,30 @@
           minlength="4"
           maxlength="8"
           size="10"
-        />久遠の指輪(十天統べ称号)<br />
+        />久遠の指輪 or 十天統べ称号<br />
+        <br />
       </div>
-      <br />
       その他<br />
       <input type="text" size="8" id="other" value="0" />%
 
       <br />
-      ダメージ上限値<br />
-      <input type="button" value="計算する" onclick="clickBtn7()" />
-      <input type="button" value="クリア" onclick="clickBtn8()" />
       <br />
-      <td class="sample_td">
+      <input type="button" value="計算する" onclick="clickCalc()" />
+      <input type="button" value="クリア" onclick="clickClear()" />
+      <br />
+      <div class="result">
+        ダメージ上限値<br />
         <input
           value=""
           name="result"
           type="text"
           id="result"
+          class="result"
           class="sample_input"
+          height="40"
           readonly
-        />
-      </td>
+        />万
+      </div>
     </article>
   </body>
 </html>
