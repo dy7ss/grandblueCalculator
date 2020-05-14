@@ -1,4 +1,4 @@
-# grablueCalclation
+# grandblueCalculator
 https://shin1127.github.io/grandblueCalculator
 
 # Introduction
