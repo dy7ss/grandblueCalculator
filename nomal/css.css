@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+  line-height: 2;
+  background-image: url("y-so-serious-white.png");
+}
+article.main {
+  padding: 15px;
+  margin-bottom: 50px;
+  background: #cde4ff; /*背景色*/
+  display: inline-block;
+}
+div.result {
+  padding-top: 15px;
+  text-align: center;
+}
+
+div.checkbox {
+  text-align: left;
+  line-height: 2;
+}
+
+input.result {
+  height: 30px;
+  font-size: 20px;
+  width: 150px;
+}
