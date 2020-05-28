@@ -3,138 +3,294 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="text/javascript" src="calc.js"></script>
     <link rel="stylesheet" href="css.css" />
-    <title>グラブル ダメージ上限計算機</title>
+    <title>Dy's portfilio.</title>
   </head>
   <body>
-    <h1>グラブル奥義上限 計算機(β)</h1>
-    これがあればお前ら、古戦場頑張れるよな？<br /><br />
+    <header>
+      <div class="headerSpace"></div>
+    </header>
+    <div class="headerText"><h1>Dy's portfilio</h1></div>
 
-    <article class="main">
-      キャラクター選択
-      <br />
-      <div class="checkbox">
-        <form id="character">
-          <input
-            type="radio"
-            name="character"
-            value="normal"
-          />主人公・通常キャラ<br />
-          <input type="radio" name="character" value="juttenshu" />十天衆<br />
-          <input
-            type="radio"
-            name="character"
-            value="lulia"
-          />ルリア/ロボミ/水ヴァンピィ
-          <br />
-        </form>
+    <article class="profile">
+      <h2 class="headline">Profile</h2>
+      <p>
+        マジシャンのディーといいます。アピールポイントは口からトランプを出せることです！<br />
+        飲食店を中心に、大阪は天満、心斎橋、東大阪と様々な場所におもむき、<br />
+        マジックパフォーマンスでお客様に喜んで頂いた経験を持っています。<br /><br />
+
+        DiscordBOTの制作でコミュニティの仲間に喜んでもらったことをきっかけに、<br />
+        エンジニアとして活動したいと考え、日々プログラミングの学習に励んでいます。
+      </p>
+    </article>
+
+    <article class="featureBlock">
+      <h2 class="headline">Feature</h2>
+      <p>
+        日々の学習で心がけていることをご紹介します。
+      </p>
+      <div class="feature">
+        <div id="open1" class="open">
+          <h3>低レイヤーを大事に</h3>
+        </div>
+        <div id="mask1" class="hidden mask"></div>
+        <section id="modal1" class="modal hidden">
+          <h4>低レイヤーを大事に</h4>
+          <p>
+            高度なフレームワークを使っていても、想定外の不具合が発生した際に原因が追求できないのは問題だと考えます。<br />
+            React.jsの知識の前にNode.jsの知識を。<br />
+            BootStrapやJQueryの学習の前に、CSSとJavaScriptの知識を深める。<br />
+            どういう仕組みでそれが動くのか、中身を意識しながら学習しています。<br /><br />
+
+            とはいえ、ExpressというJSのWebフレームワークの学習段階に入って、<br />
+            それを実行し続けるのがどれだけ辛いことか、ひしひしと実感しています。<br />
+            入門書とうたいつつも、他言語での開発経験があることを前提としたようなテキストばかりなので、<br />
+            Google検索に頼ることが非常に多くなります。<br /><br />
+
+            「ルーティングって何？レンダリングとは？」<br />
+            「res.render()メソッドの第二引数でデータをEJSファイルに送れるらしいが、どういう形式で送信しているの？」<br />
+
+            テキストを読む時間よりも、Google検索している時間のほうが圧倒的に多いかもしれません。
+          </p>
+          <div id="close1" class="close">
+            閉じる
+          </div>
+        </section>
+      </div>
+      <div class="feature">
+        <div id="open2" class="open">
+          <h3>他の解決手段も模索</h3>
+        </div>
+        <div id="mask2" class="hidden mask"></div>
+        <section id="modal2" class="modal hidden">
+          <h4>他の解決手段も模索</h4>
+          <p>
+            アルゴリズム問題を解く時や、アプリケーションを制作する時に心がけていることです。<br />
+            より短いソースコードにできないか、可読性の高まる方法はないかを考え、<br />
+            一度で二度以上おいしい経験になるように学習しています。<br /><br />
+
+            基本的ではあるものの、学習したものの中で利用の機会が最も多いのが拡張for文です。<br /><br />
+            Javaの <b>for (s : strList){...</b> のようなものがそれですが、<br />
+            <b>for (int i = 0; i < strList.size(); i++{...</b><br />
+            と書くことのなんと大変なことか。<br /><br />
+
+            この学習以降、まず拡張for文で書けないかどうか考えてから、for文を書くようになりました。<br />
+          </p>
+          <div id="close2" class="close">
+            閉じる
+          </div>
+        </section>
       </div>
       <br />
-      アーカルム石<br />
-      <div class="checkbox">
-        <form id="arkStone">
-          <input type="radio" name="arkStone" value="none" />ない<br />
-          <input type="radio" name="carkStone" value="5per" />5%<br />
-          <input type="radio" name="arkStone" value="7per" />7%<br />
-          <input type="radio" name="arkStone" value="10per" />10%
-        </form>
-      </div>
+      <div class="feature">
+        <div id="open3" class="open">
+          <h3>積極的なアウトプット</h3>
+        </div>
+        <div id="mask3" class="hidden mask"></div>
+        <section id="modal3" class="modal hidden">
+          <h4>積極的なアウトプット</h4>
+          <p>
+            特にGithubにおいて、とにかく得た知識を記録する癖をつけています。<br />
+            アウトプットすることと、それを読み返しやすい環境におくことで、<br />
+            知識の定着度合いが高まると考えています。<br /><br />
+            新しい専門用語を知った、既存の知識は勘違いだった、そういった細かいものから<br />
+            アルゴリズムクイズの解答に使った関数、テキストのサンプルコードを改変したものまで、<br />
+            なるべく多くの情報を書き込むようにしています。<br /><br />
 
-      <br />
-      装備など
-      <br />
-      <div class="checkbox">
-        <input
-          type="checkbox"
-          id="input_tenbin"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />支配の天秤<br />
+            とりわけQiitaへのアウトプットだと、それが勘違いや知識不足によるものであれ嘘は書けないので、<br />
+            書き込むつもりの知識・言葉が正しいものかどうか確かめる癖をつけています。<br /><br />
 
-        <input
-          type="checkbox"
-          id="input_sisho"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />四象武器(SLv.15)<br />
-        <input
-          type="checkbox"
-          id="inputKaim"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />カイム<br />
-        <input
-          type="checkbox"
-          id="inputTenshiWepon"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />天司武器(SLv.15)<br />
-
-        <input
-          type="checkbox"
-          id="inputOmega"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />オメガウェポン or 終末の神器<br />
-
-        <input
-          type="checkbox"
-          id="inputKuon"
-          name="name"
-          required
-          minlength="4"
-          maxlength="8"
-          size="10"
-        />久遠の指輪 or 十天統べ称号<br />
-        <br />
-      </div>
-
-      奥義上限LB
-      <div class="checkbox">
-        <form id="lbStar">
-          <input type="radio" name="lbStar" value="0" />ない<br />
-          <input type="radio" name="lbStar" value="1" />★<br />
-          <input type="radio" name="lbStar" value="2" />★★<br />
-          <input type="radio" name="lbStar" value="3" />★★★
-        </form>
-      </div>
-      その他<br />
-      <input type="text" size="8" id="other" value="0" />%
-
-      <br />
-      <br />
-      <input type="button" value="計算する" onclick="clickCalc()" />
-      <input type="button" value="クリア" onclick="clickClear()" />
-      <br />
-      <div class="result">
-        ダメージ上限値<br />
-        <input
-          value=""
-          name="result"
-          type="text"
-          id="result"
-          class="result"
-          class="sample_input"
-          height="40"
-          readonly
-        />万
+            Javaのクラスには、プロパティやメンバ、フィールドというよく似た概念があるのですが、<br />
+            それぞれの違いについて調べたときは1時間はかかったような気がします。
+          </p>
+          <div id="close3" class="close">
+            閉じる
+          </div>
+        </section>
       </div>
     </article>
+
+    <article class="skillset">
+      <h2 class="headline">My Skill Set</h2>
+      <p>学習した言語や技術、使用ツールをご紹介します。</p>
+
+      Front-end<br />
+      HTML, CSS, JavaScript<br /><br />
+
+      Back-end<br />
+      Java, Python, Node.js, MariaDB(MySQL),Servlet & JSP<br /><br />
+
+      Others<br />
+      MarkDown記法, ScrapBox, Github<br />
+    </article>
+
+    <article class="til">
+      <h2 class="headline">T.I.L</h2>
+      <p>
+        TIL(Today I
+        learned)と称して、QiitaやScrapBox、Githubに日々の学びをまとめています。<br /><br />
+        Qiitaは他者に見せる、見られることを意識したアウトプットに。<br />
+        ScrapBoxは参考サイトのURLやスクリーンショットを貼り付けるだけ、他のエンジニアの方の話を聞いてとったメモ書き・走り書きに。<br />
+        GithubはQiitaとScraoBoxの中間程度の位置づけとして、『TIL』というリポジトリを作成してそこに書き込むか、<br />
+        各リポジトリのREADMEに制作背景やそこで得られた知見の詳細を書き込む。<br />
+        といった具合に使い分けています。<br /><br />
+
+        各サイトへのリンクをご用意しました。興味をもたれましたらぜひご覧ください。<br />
+        ScrapBoxは書籍の引用やチャットログやスクリーンショットが含まれるため、<br />それらを抜いたものをサンプルとしてご紹介しています。<br />
+        (本当に走り書きです)<br /><br />
+
+        <a href="https://github.com/shin1127/" target="_blank">Github</a><br />
+
+        <a href="https://github.com/shin1127/TIL" target="_blank">Github(TIL)</a
+        ><br />
+
+        <a href="https://qiita.com/cordy" target="_blank">Qiita</a><br />
+        <a
+          href="https://scrapbox.io/dys/%E6%9B%B8%E3%81%8D%E6%AE%B4%E3%82%8A%E5%B8%B3"
+          target="_blank"
+          >ScrapBox</a
+        ><br />
+      </p>
+    </article>
+
+    <article class="works">
+      <h2 class="headline">Works</h2>
+      <p>
+        プログラミング学習の中で制作したものをご紹介します。<br />
+        より詳しい制作背景や制作の過程で得た知見は、対応するGithubリポジトリのREADME.mdをご覧ください。
+      </p>
+
+      <div id="open5" class="open">
+        <h3>自販機システム</h3>
+      </div>
+      <div id="mask5" class="hidden mask"></div>
+      <section id="modal5" class="hidden modal">
+        <p></p>
+        <h3>自販機システム</h3>
+        コンソール上で動作する、飲料水の自販機を模したプログラム。<br />
+        標準入力(Scannerクラス)と例外処理(try-catch文)を組み合わせたループ処理の実装に特に苦労しました。<br />
+        文法やオブジェクト指向の入門書を1冊読み込んだ上での初めてのJavaプログラミングだったので、<br />
+        クラスの切り分けやメソッドの作成、変数の命名法、デバッグ作業、IDEの操作方法などあらゆる面で学びがありました。<br /><br />
+
+        列挙型の導入など、後に自分でカスタマイズしているものの、<br />
+        初期の要件定義はJavaのエンジニアの友人に提供してもらい、<br />
+        それに沿ってコーディングを行いました。<br /><br />
+
+        Githubリポジトリは
+        <a href="https://github.com/shin1127/VendingMachine" target="_blank"
+          >こちら</a
+        ><br /><br />
+        画像は動作するプログラムの様子です。<br />
+        コンソール上に対応した数字を入力することで、お金や飲料水のやりとりが仮想的に実行できます。<br /><br />
+        <img
+          src="vendingMachineEx1.png"
+          alt="自販機システム 例1"
+          width="50%"
+          height="50%"
+        />
+
+        <div id="close5" class="close">
+          閉じる
+        </div>
+      </section>
+
+      <div id="open6" class="open">
+        <h3>処理速度比較</h3>
+      </div>
+      <div id="mask6" class="hidden mask"></div>
+      <section id="modal6" class="hidden modal">
+        <p></p>
+        <h3>処理速度比較</h3>
+        コンパイラ言語とインタプリタ言語の処理速度を比較するプログラム。<br />
+        JavaとPythonで加算処理・円周率近似をそれぞれ実行し、テキストファイルに実行時間の生データや平均値を出力します。<br />
+        2言語間で行う処理を同一にすることに神経を使いました。<br /><br />
+        例えば、Pythonのfloat型は特に断りのない場合、64ビットの浮動小数点数表現であることに注意すると、<br />
+        Javaで同一の処理を行うためには、float型ではなくdouble型で計算を行う必要があります。<br />
+        Javaでなんとなく使っていたプリミティブ型について、知識を深めることができました。<br /><br />
+        Githubリポジトリは
+        <a
+          href="https://github.com/shin1127/CompareExecutionSpeed"
+          target="_blank"
+          >こちら</a
+        >
+        <br />
+
+        <br />
+        左の画像がJavaで動作したターミナル上での出力、右がテキストに結果を出力した様子です。<br /><br />
+
+        <img
+          src="speedTestEx2.png"
+          alt="実行速度比較 例2"
+          width="50%"
+          height="50%"
+        />
+        <img
+          src="speedTestEx1.png"
+          alt="実行速度比較 例1"
+          width="25%"
+          height="25%"
+        />
+        <div id="close6" class="close">
+          閉じる
+        </div>
+      </section>
+
+      <div id="open7" class="open">
+        <h3>ポートフォリオサイト</h3>
+      </div>
+      <div id="mask7" class="hidden mask"></div>
+      <section id="modal7" class="modal hidden">
+        <p></p>
+        <h3>ポートフォリオサイト</h3>
+        当ページです。<br />
+        JavaScriptを使ったウェブサイト制作としては処女作です。<br />
+        BootStrapやJQueryなどのライブラリに頼らず、生で書き切った所が特徴です。<br /><br />
+        ボタン処理を複数個実装する際、それに必要なcss,jsファイルの中身が冗長にならないように工夫しています。<br />
+        具体的には、変数をそれぞれ対応するオブジェクトに格納したほか、ボタン処理に必要な複数の関数を1つの関数にまとめました。<br /><br />
+
+        ここで得た大きな学びは、<br />
+        「何も考えずにCSSを書くと雑なソースコードになりすぎ、非常に読みづらいものになってしまう」<br />
+        ということです。<br /><br />
+
+        デザイン段階から制作したことを強くアピールしたいので、<br />
+        制作に使った初期のデザインカンプを記載します。<br /><br />
+        <img
+          src="designCamp.jpg"
+          alt="デザインカンプ"
+          width="90%"
+          height="90%"
+        />
+        <div id="close7" class="close">
+          閉じる
+        </div>
+      </section>
+
+      <div id="open4" class="open">
+        <h3>グラブルダメージ計算機</h3>
+      </div>
+      <div id="mask4" class="hidden mask"></div>
+      <section id="modal4" class="modal hidden">
+        <p></p>
+        <h3>グラブルダメージ計算機</h3>
+        ソーシャルゲーム「グランブルーファンタジー」で利用するダメージ計算機です。<br />
+        GithubPagesで公開しています。<br /><br />
+
+        <a
+          href="https://shin1127.github.io/grandblueCalculator/"
+          target="_blank"
+          >グラブル奥義上限 計算機(β)</a
+        ><br /><br />
+
+        ラジオボタンやチェックボックスの入力状況を取得し、それに応じた計算処理を行い、返します。<br />
+        コミュニティのメンバーに「こういうのが欲しかった！」と言ってもらえたので、とても満足しています。<br /><br />
+
+        アピールポイントは「自分でニーズに沿った課題を発見し、それをプログラミング技術によって解決できた」ことです。<br />
+        <div id="close4" class="close">
+          閉じる
+        </div>
+      </section>
+    </article>
+
+    <script src="hoge.js"></script>
   </body>
 </html>
