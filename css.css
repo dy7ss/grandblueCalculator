@@ -6,7 +6,7 @@ body {
 article.main {
   padding: 15px;
   margin-bottom: 50px;
-  background: #cde4ff; /*背景色*/
+  background: #cde4ff;
   display: inline-block;
 }
 div.result {
