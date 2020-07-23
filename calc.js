@@ -1,44 +1,45 @@
-var result = 0;
-var base = 167;
-
 function clickCalc() {
+  // 各項目の補正値
   const valueTenbin = 0.1;
   const ValueSisho = 0.07;
   const ValueKaim = 0.1;
   const ValueTenshiWepon = 1.23;
   const ValueOmega = 0.15;
   const ValueKuon = 0.05;
-  var result = 0;
-  var base = 0;
 
-  var flagTenbin = document.getElementById("input_tenbin").checked;
-  var flagSishoWepon = document.getElementById("input_sisho").checked;
-  var flagTenshiWepon = document.getElementById("inputTenshiWepon").checked;
-  var flagKaim = document.getElementById("inputKaim").checked;
-  var flagOmega = document.getElementById("inputOmega").checked;
-  var flagKuon = document.getElementById("inputKuon").checked;
+  // 初期化
+  let result = 0;
+  let base = 0;
+
+  // 装備のチェックボックスの確認
+  let flagTenbin = document.getElementById("input_tenbin").checked;
+  let flagSishoWepon = document.getElementById("input_sisho").checked;
+  let flagTenshiWepon = document.getElementById("inputTenshiWepon").checked;
+  let flagKaim = document.getElementById("inputKaim").checked;
+  let flagOmega = document.getElementById("inputOmega").checked;
+  let flagKuon = document.getElementById("inputKuon").checked;
 
   // その他欄の入力を受け取る
 
-  var inputOther = document.getElementById("other").value;
+  let inputOther = document.getElementById("other").value;
   inputOther = parseInt(inputOther);
 
   // キャラクター種類の読み込み
-  var element = document.getElementById("character");
-  var radioNodeList = element.character;
-  var characterType = radioNodeList.value;
+  const elementChar = document.getElementById("character");
+  const radioNodeList = elementChar.character;
+  const characterType = radioNodeList.value;
 
   // アーカルム石状況の読み込み
 
-  var element = document.getElementById("arkStone");
-  var radioNodeList2 = element.arkStone;
-  var stoneType = radioNodeList2.value;
+  const elementArk = document.getElementById("arkStone");
+  const radioNodeArk = elementArk.arkStone;
+  const stoneType = radioNodeArk.value;
 
   // 奥義上限LBの読み込み
 
-  var element = document.getElementById("lbStar");
-  var radioNodeList3 = element.lbStar;
-  var star = radioNodeList3.value;
+  const elementLB = document.getElementById("lbStar");
+  const radioNodeLB = elementLB.lbStar;
+  const star = radioNodeLB.value;
 
   if (characterType == "normal") {
     base = 167;
@@ -80,7 +81,7 @@ function clickCalc() {
 
   //最終ダメージ加算系（天司枠）
 
-  var finalsum = 0;
+  let finalsum = 0;
   if (flagTenshiWepon) {
     finalsum += 0.23;
   }
@@ -103,6 +104,7 @@ function clickCalc() {
   document.getElementById("result").value = result;
 }
 
+// 値を空欄にする
 function clickClear() {
   document.getElementById("result").value = "";
 }
